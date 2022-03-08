@@ -17,18 +17,40 @@
 	img {width: 100%}
 	figure {width: 25%; margin: auto;}
 
+  body {background-color: rgb(92, 179, 135);
+
+  }
+  
+    .navbar {
+  background-color: rgb(92, 179, 135);
+  border: 1px solid #fcf2e4;
+  
+}
+
+article,h1,h2,.nav a,.navbar a{
+    color: #e267ab;
+  }
+
+  .navbar,   .nav a:hover {
+  border: 1px solid #e267ab;
+}
+
+.active {
+  border: 1px solid #e267ab;
+}
+
 @media only screen and (max-width: 800px) {
     h1 {
     font-size: 140px;
   }
 
   .main {
-  margin-bottom: 140px;
+  margin-bottom: 160px;
 }
 
 .navbar a {
   display: block;
-  line-height: 28px;
+  line-height: 28pt;
 }
 
 }
@@ -40,7 +62,7 @@
 	<header>
         <div class="nav">
             <a href="index.html">HOME</a>
-            <a href="#about">ABOUT</a>
+            <a href="about.html">ABOUT</a>
 			<a href="mailto:elmec739@newschool.edu">CONTACT</a>  
 
           </div>
@@ -112,8 +134,8 @@
 
     <div class="navbar">
         <a href="index.html">ORIGINAL</a>
-        <a href="proper.html">PROPER PUNCTUATION</a>
-        <a href="no.html">NO PUNCTUATION</a>
+        <a href="proper.html">ADDED PUNCTUATION</a>
+        <a href="no.html" class="active">NO PUNCTUATION</a>
 
 
       </div>
