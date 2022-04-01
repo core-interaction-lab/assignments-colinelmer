@@ -33,9 +33,9 @@ body {
   }
 
   .outer-grid {
+    border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
     /* Container should take up only 90% of the browser, leave 5% space on each side */
     width: 90%;
     /* Center container */
@@ -45,21 +45,28 @@ body {
   .inner-grid {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 15 4px;
  }
 
  .inner-grid img {
-    margin-top: 8px;
     width: 100%;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+
+
 
  }
 
  * {
     box-sizing: border-box;
+
  }
 
+ .grid-image {
+    border-bottom: 3px solid black;
+}
 
-  .grid-image {
-
+  .grid-image:hover {
+      background:hsl(0, 0%, 43%);
   }
