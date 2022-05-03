@@ -1,14 +1,15 @@
-var questions = 3;
-var questionsLeft = ' [' + questions + ' questions left]';
-var adjective = prompt('Please type an adjective' + questionsLeft);
-questions -= 1;
-questionsLeft = ' [' + questions + ' questions left]';
-var verb = prompt('Please type a verb that does not end in -ing ' + questionsLeft);
-questions -= 1;
-questionsLeft = ' [' + questions + ' questions left]';
-var noun = prompt('Please type a noun' + questionsLeft);
-alert('All done. Ready for the message?');
-var sentence = "<h2>There once was a " + adjective;
-sentence += ' programmer who wanted to use JavaScript to ' + verb;
-sentence += ' the ' + noun + '.</h2>';
-document.write(sentence);
+console.log("Made by Andrew");
+
+function playMadLibs() {
+  //going to grab user entry and store it in variables in JavaScript
+  //document.getElementById grabs HTML ids
+  //JavaScript is insanely case sensitive
+  var name = document.getElementById("name").value;
+  var date = document.getElementById("date").value;
+  var feeling = document.getElementById("feeling").value;
+  var entry = document.getElementById("entry").value;
+  
+  //push out back to HTML with .innerHTML
+  document.getElementById("showStory").style.visibility = "visible";
+  document.getElementById("showStory").innerHTML = "<b>My diary entry:</b><br>" + name + "</b><br>" + date + "</b><br> Today I am feeling " + feeling + " because " + entry + "<br></b><br>Refresh the page to start a new entry</b>";
+}
