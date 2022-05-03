@@ -46,7 +46,7 @@ input[type=button] {
   font-weight: bold;
 }
 
-#showStory {
+#showEntry {
   visibility: hidden;
   background-color: rgb(176, 164, 141) ;
   padding: 5px;
