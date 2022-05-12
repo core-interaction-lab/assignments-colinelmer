@@ -3,17 +3,38 @@
     <title>Digital Diary</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="story.js"></script>
+
+    <style>
+      body {
+	background: linear-gradient(45deg, #ee5252, #3ce780, #61b7d7, #dede4b, #7b186e);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    </style>
   </head>
   <body>
     <h1>Welcome to your digital diary</h1>
-    <div id = "enter">
-      <p>Enter your name: <input type = "text" id = "name"></p>
-    <p>Enter today's date: <input type = "text" id = "date"></p>
-    <p>How are you feeling today: <input type = "text" id = "feeling"></p>
-      <p>Describe why you are feeling this way: <input type = "text" id = "entry"></p>
-    </div>
-    <p>
-      <input type = "button" value = "Create Entry" onClick = "responses();"></p>
-    <p id = "showEntry"></p>
+    <h2>Today I am feeling...</h2>
+      <div class="nav">
+          <a href="happy.html">Happy</a>
+          <a href="sad.html">Sad</a>
+          <a href="angry.html">Angry</a>
+          <a href="suprised.html">Suprised</a>
+          <a href="afraid.html">Afraid</a>
+          <a href="disgusted.html">Disgusted</a>
+        </div>
+
   <body>  
 </html>

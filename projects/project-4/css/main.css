@@ -1,36 +1,49 @@
 body {
   font-family: Helvetica;
-  margin: 30px;
+  margin: 50px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 #enter{
-  padding: px;
-  border-radius: 5px;
-  color: dimgrey;
-  font-weight: bold;
-  line-height: 24px;
+  color: black;
+  line-height: 35px;
 }
 
 #enter{
-  width: 80%;
-  margin: 0 auto;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 
 input[type=text] {
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: "comic sans ms";
-  background-color: rgb(176, 164, 141);
+  color: black;
+  font-family: pauline-script, sans-serif;
+
+  font-weight: 300;
+
+
+  font-size: 35;
+  
+  font-style: normal;
+
+  
+  background-color: rgb(255, 231, 133);
   border: 0;
+  outline: 1px solid black;
+  width:100%;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 h1 {
   text-align: center;
   font-style: italic;
+}
+
+h2 {
+  text-align: center;
 }
 
 input[type=button] {
@@ -39,19 +52,80 @@ input[type=button] {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
   font-size:28px;
-  outline: 3px solid black;
+  outline: 1px solid black;
   border: 0;
   font-weight: bold;
+  padding: 10px;
+}
+
+.nav {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px;
+  font-size: 16pt;
+
+
+}
+
+.nav a:hover {
+  border: 1px solid black;
+}
+
+.active {
+  border: 1px solid black;
+  padding: 8px;
 }
 
 #showEntry {
   visibility: hidden;
-  background-color: rgb(176, 164, 141) ;
-  padding: 5px;
+  background-color: rgb(255, 231, 133) ;
+  background-image: ;
+  padding: 10px;
   font-size: 28px;
   padding-left: 20px;
   line-height: 36px;
-  color: white;
+  color: black;
+  outline: 1px solid black;
+  margin-bottom: 100px;
+}
+
+.image {
+  position:relative;
+  -webkit-animation:glide 2s ease-in-out alternate infinite;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  width:10px;
+  height:24px;}
+
+  .emotion {
+    height: 235px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+@-webkit-keyframes glide  {
+  from {
+     left:0px;
+     top:0px;
+  }
+  
+  to {
+     left:0px;
+     top:20px;
+  }
+
 }
