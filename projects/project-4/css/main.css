@@ -101,10 +101,10 @@ input[type=button] {
 .image {
   position:relative;
   -webkit-animation:glide 2s ease-in-out alternate infinite;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   align-items: center;
+  align-content: center;
+  display: flex;
   padding-top: 100px;
   padding-bottom: 75px;
   width:10px;

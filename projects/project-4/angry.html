@@ -2,12 +2,12 @@
   <head>
     <title>Digital Diary</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="happy.js"></script>
+    <script src="angry.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/yji4qsm.css">
 
     <style>
       body {
-	background: linear-gradient(45deg, #e3860c, #fffb8a, #fff93f);
+	background: linear-gradient(45deg, #ffc72e, #e52828, #ec5252);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
@@ -23,6 +23,15 @@
 		background-position: 0% 50%;
 	}
 }
+
+#showEntry {
+  background-color: #ec5252;
+}
+
+input[type=text] {
+  background-color: #ec5252;
+}
+
     </style>
   </head>
   <body>
@@ -31,21 +40,21 @@
      
     <h2>Today I am feeling...</h2>
       <div class="nav">
-          <a href="happy.html" class="active">Happy</a>
-          <a href="sad.html">Sad</a>
-          <a href="angry.html">Angry</a>
+          <a href="happy.html">Happy</a>
+          <a href="sad.html" >Sad</a>
+          <a href="angry.html" class="active">Angry</a>
           <a href="suprised.html">Suprised</a>
           <a href="afraid.html">Afraid</a>
           <a href="disgusted.html">Disgusted</a>
         </div>
 
         <div class="image"> 
-          <img class="emotion" src="images/happy1.png">
-          <img class="emotion" src="images/happy2.png"> 
-          <img class="emotion" src="images/happy1.png">
-          <img class="emotion" src="images/happy2.png">
-          <img class="emotion" src="images/happy1.png">
-          <img class="emotion" src="images/happy2.png">
+          <img class="emotion" src="images/angry1.png">
+          <img class="emotion" src="images/angry2.png"> 
+          <img class="emotion" src="images/angry1.png">
+          <img class="emotion" src="images/angry2.png"> 
+          <img class="emotion" src="images/angry1.png">
+          <img class="emotion" src="images/angry2.png"> 
 
 
          </div>   
@@ -54,7 +63,7 @@
     <div id = "enter">
     <p>Enter your name: <input type = "text" id = "name"></p>
     <p>Enter today's date: <input type = "text" id = "date"></p>
-    <p>Describe why you are feeling happy: <input type = "text" id = "entry"></p>
+    <p>Describe why you are feeling sad: <input type = "text" id = "entry"></p>
     </div>
     <p>
       <input type = "button" value = "Read Entry" onClick = "responses();"></p>
