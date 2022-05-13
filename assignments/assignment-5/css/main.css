@@ -1,0 +1,43 @@
+body {
+	background: rgb(212, 198, 167);
+    margin: 50px;
+}
+
+h1 {
+    font-family: atrament-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+#showMadlibs {
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #enter {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input[type=button] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+  }
