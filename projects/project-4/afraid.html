@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Digital Diary</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="afraid.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/yji4qsm.css">
+
+    <style>
+      body {
+	background: linear-gradient(45deg, #ffffff, #626262, #151515);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#showEntry {
+  background-color: #626262;
+}
+
+input[type=text] {
+  background-color: #626262;
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+    <h1>Welcome to your digital diary</h1>
+     
+    <h2>Today I am feeling...</h2>
+      <div class="nav">
+          <a href="happy.html">Happy</a>
+          <a href="sad.html" >Sad</a>
+          <a href="angry.html" >Angry</a>
+          <a href="suprised.html">Suprised</a>
+          <a href="afraid.html" class="active">Afraid</a>
+          <a href="disgusted.html">Disgusted</a>
+        </div>
+
+        <div class="image"> 
+          <img class="emotion" src="images/afraid1.png">
+          <img class="emotion" src="images/afraid2.png"> 
+          <img class="emotion" src="images/afraid1.png">
+          <img class="emotion" src="images/afraid2.png"> 
+          <img class="emotion" src="images/afraid1.png">
+          <img class="emotion" src="images/afraid2.png"> 
+
+
+         </div>   
+
+
+    <div id = "enter">
+    <p>Enter your name: <input type = "text" id = "name"></p>
+    <p>Enter today's date: <input type = "text" id = "date"></p>
+    <p>Describe why you are feeling afraid: <input type = "text" id = "entry"></p>
+    </div>
+    <p>
+      <input type = "button" value = "Read Entry" onClick = "responses();"></p>
+    <p id = "showEntry"></p>
+  </main>
+
+  <body>
+</html>
