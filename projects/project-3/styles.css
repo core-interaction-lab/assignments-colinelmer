@@ -29,10 +29,12 @@ body {
   }
 
   .nav {
-    width: 90%;
     display: flex;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+
   }
 
   .nav a {
@@ -50,9 +52,7 @@ body {
     border: 3px solid #FFF2E9;
     display: flex;
     flex-wrap: wrap;
-    /* Container should take up only 90% of the browser, leave 5% space on each side */
     width: 90%;
-    /* Center container */
     margin: 0 auto;
     padding: 10px;
     padding-bottom: 40px;
